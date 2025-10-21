@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Services</title>
+  <title>Top Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/pulsatopup/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -17,12 +17,12 @@
   <meta name="description" content="Services" />
   <meta property="og:title" content="Services"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content=""/>
+  <meta property="og:url" content="https://calista-services.github.io/pulsatopup/services/"/>
   
   <meta property="og:description" content="Services"/>
   <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:site" content=""/>
-  <meta name="twitter:creator" content=""/>
+  <meta name="twitter:site" content="https://calista-services.github.io/pulsatopup/services/"/>
+  <meta name="twitter:creator" content="calista-services"/>
 
 </head>
 
@@ -90,127 +90,64 @@
   </div>
 </div>
 
-    <div class="intro">
+ <main class="section section-topup">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <h1 id="services-that-grow-with-your-business">Services that grow with your business</h1>
+    <h1 class="section-title">Form Top Up Pulsa</h1>
+    <p class="section-description">Isi data berikut untuk melakukan pengisian pulsa.</p>
 
-<p>Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.</p>
+    <form id="topupForm" class="topup-form" action="#" method="POST">
+      <!-- Nomor HP -->
+      <div class="form-group">
+        <label for="nomor">Nomor HP</label>
+        <input type="tel" id="nomor" name="nomor" placeholder="Contoh: 081234567890" required pattern="[0-9]{10,13}">
+      </div>
 
+      <!-- Provider -->
+      <div class="form-group">
+        <label for="provider">Provider</label>
+        <select id="provider" name="provider" required>
+          <option value="">Pilih provider...</option>
+          <option value="telkomsel">Telkomsel</option>
+          <option value="xl">XL</option>
+          <option value="indosat">Indosat</option>
+          <option value="tri">Tri</option>
+          <option value="axis">Axis</option>
+          <option value="smartfren">Smartfren</option>
+        </select>
       </div>
-      
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt=Services class="intro-image intro-image-absolute intro-image-hide-mobile" src="/pulsatopup/images/illustrations/reading.svg" />
+
+      <!-- Nominal -->
+      <div class="form-group">
+        <label for="nominal">Nominal</label>
+        <select id="nominal" name="nominal" required>
+          <option value="">Pilih nominal...</option>
+          <option value="5000">Rp 5.000</option>
+          <option value="10000">Rp 10.000</option>
+          <option value="20000">Rp 20.000</option>
+          <option value="50000">Rp 50.000</option>
+          <option value="100000">Rp 100.000</option>
+        </select>
       </div>
-      
-    </div>
+
+      <!-- Metode Pembayaran -->
+      <div class="form-group">
+        <label for="pembayaran">Metode Pembayaran</label>
+        <select id="pembayaran" name="pembayaran" required>
+          <option value="">Pilih metode...</option>
+          <option value="qris">QRIS</option>
+          <option value="bank_transfer">Transfer Bank</option>
+          <option value="ewallet">E-Wallet (Dana, OVO, GoPay)</option>
+        </select>
+      </div>
+
+      <!-- Tombol -->
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </div>
+    </form>
   </div>
-</div>
+</main>
 
-<div class="container pt-6 pb-6">
-  <div class="row">
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/accounting/">Accounting</a>
-          </h2>
-          <p>Financial accounting (or financial accountancy) is the field of accounting concerned with the sum...</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/business-sales/">Business Sales</a>
-          </h2>
-          <p>Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
-vixque dixit negari ullis stamina...</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/mergers/">Mergers</a>
-          </h2>
-          <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/business-advisory/">Business Advisory</a>
-          </h2>
-          <p>Business advisory is the final tier of the accounting pyramid.
-
-</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/superannuation/">Superannuation</a>
-          </h2>
-          <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/tax-preperation/">Tax Preperation</a>
-          </h2>
-          <p>Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit,
-clipeus fatetur, mira inter...</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/insurance/">Insurance</a>
-          </h2>
-          <p>Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit,
-clipeus fatetur, mira inter...</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/pulsatopup/services/wealth-management/">Wealth Management</a>
-          </h2>
-          <p>Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit,
-clipeus fatetur, mira inter...</p>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-  </div>
   <div class="footer">
   <div class="container">
     <div class="row">
