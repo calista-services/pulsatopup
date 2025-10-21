@@ -217,6 +217,9 @@
                 placeholder="Contoh: 081234567890"
                 required
                 pattern="[0-9]{10,13}"
+                  oninvalid="this.setCustomValidity('Tolong masukkan nomor yang valid (10-13 digit angka)')"
+                  oninput="this.setCustomValidity('')"
+
               />
             </div>
 
